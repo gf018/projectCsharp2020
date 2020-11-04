@@ -53,13 +53,13 @@ namespace WindowsFormsApp3{//www.youtube.com/watch?v=g6etQnX-BQY       001. C#.N
             public string estadoVentana(){
                 return leerRegistro("WindowMode");
             }
-        }
+        }*/
 
           protected string leerRegistro(string clave){
             RegistryKey subKey = regKey.OpenSubKey(subFolderPath);
             int resultados = (Int32)subKey.GetValue(clave);
             return resultados.ToString();
-          }*/
+          }
 
         /*private class registro{
             protected void modificarRegistro(string clave, int valor, RegistryValueKind tipo){
